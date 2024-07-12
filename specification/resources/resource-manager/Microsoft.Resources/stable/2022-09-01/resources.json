@@ -2726,13 +2726,13 @@
         "description": "Captures the specified resource group as a template.",
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "parameters",
@@ -4835,7 +4835,7 @@
       "x-ms-external": true,
       "properties": {
         "error": {
-          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse"
+          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse"
         }
       },
       "description": "An error response for a resource management request."
@@ -5368,7 +5368,7 @@
         },
         "error": {
           "readOnly": true,
-          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse",
+          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
           "description": "The deployment error."
         }
       },
@@ -5435,7 +5435,7 @@
       "properties": {
         "error": {
           "readOnly": true,
-          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse",
+          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
           "description": "The deployment validation error."
         },
         "properties": {
@@ -6199,7 +6199,7 @@
           "description": "The template content."
         },
         "error": {
-          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse",
+          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
           "description": "The template export error."
         }
       },
@@ -6447,7 +6447,7 @@
           "description": "What-If operation properties."
         },
         "error": {
-          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse",
+          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
           "description": "Error when What-If operation fails."
         }
       }
@@ -6677,7 +6677,7 @@
           "description": "Status of the deployment operation."
         },
         "error": {
-          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse",
+          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
           "description": "The error reported by the operation."
         }
       }
