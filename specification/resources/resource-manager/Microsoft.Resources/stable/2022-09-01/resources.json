@@ -5435,6 +5435,7 @@
       "properties": {
         "error": {
           "readOnly": true,
+          "type": "array",
           "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
           "description": "The deployment validation error."
         },
