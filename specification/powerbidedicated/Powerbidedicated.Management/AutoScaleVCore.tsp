@@ -74,6 +74,7 @@ interface AutoScaleVCores {
   /**
    * Gets all the auto scale v-cores for the given resource group.
    */
+  @list
   listByResourceGroup is ArmResourceListByParent<
     AutoScaleVCore,
     Response = ArmResponse<AutoScaleVCoreListResult>,
@@ -83,6 +84,7 @@ interface AutoScaleVCores {
   /**
    * Lists all the auto scale v-cores for the given subscription.
    */
+  @list
   listBySubscription is ArmListBySubscription<
     AutoScaleVCore,
     Response = ArmResponse<AutoScaleVCoreListResult>,

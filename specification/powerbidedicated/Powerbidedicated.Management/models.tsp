@@ -208,80 +208,6 @@ model DedicatedCapacityAdministrators {
 }
 
 /**
- * Represents an instance of an PowerBI Dedicated resource.
- */
-model Resource {
-  /**
-   * An identifier that represents the PowerBI Dedicated resource.
-   */
-  @visibility(Lifecycle.Read)
-  id?: string;
-
-  // /**
-  //  * The name of the PowerBI Dedicated resource.
-  //  */
-  // @visibility(Lifecycle.Read)
-  // name?: string;
-
-  /**
-   * The type of the PowerBI Dedicated resource.
-   */
-  @visibility(Lifecycle.Read)
-  type?: string;
-
-  /**
-   * Location of the PowerBI Dedicated resource.
-   */
-  @visibility(Lifecycle.Read, Lifecycle.Create)
-  location: string;
-
-  /**
-   * Key-value pairs of additional resource provisioning properties.
-   */
-  #suppress "@azure-tools/typespec-azure-resource-manager/arm-no-record" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
-  tags?: Record<string>;
-
-  /**
-   * Metadata pertaining to creation and last modification of the resource.
-   */
-  systemData?: SystemData;
-}
-
-/**
- * Metadata pertaining to creation and last modification of the resource.
- */
-model SystemData {
-  /**
-   * An identifier for the identity that created the resource.
-   */
-  createdBy?: string;
-
-  /**
-   * The type of identity that created the resource.
-   */
-  createdByType?: IdentityType;
-
-  /**
-   * The timestamp of resource creation (UTC).
-   */
-  createdAt?: utcDateTime;
-
-  /**
-   * An identifier for the identity that last modified the resource.
-   */
-  lastModifiedBy?: string;
-
-  /**
-   * The type of identity that last modified the resource.
-   */
-  lastModifiedByType?: IdentityType;
-
-  /**
-   * The timestamp of resource last modification (UTC).
-   */
-  lastModifiedAt?: utcDateTime;
-}
-/**
  * The error object
  */
 @error
@@ -327,12 +253,11 @@ model DedicatedCapacityUpdateParameters {
 /**
  * An array of Dedicated capacities resources.
  */
-@pagedResult
 model DedicatedCapacities {
   /**
    * An array of Dedicated capacities resources.
    */
-  @items
+  @pageItems
   value: DedicatedCapacity[];
 
   /**
@@ -602,12 +527,11 @@ model AutoScaleVCoreUpdateParameters {
  * An array of auto scale v-core resources.
  */
 #suppress "@azure-tools/typespec-azure-core/casing-style" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
-@pagedResult
 model AutoScaleVCoreListResult {
   /**
    * An array of auto scale v-core resources.
    */
-  @items
+  @pageItems
   value: AutoScaleVCore[];
 
   #suppress "@azure-tools/typespec-azure-core/documentation-required" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
@@ -618,13 +542,12 @@ model AutoScaleVCoreListResult {
 /**
  * Result listing capacities. It contains a list of operations and a URL link to get the next set of results.
  */
-@pagedResult
 model OperationListResult {
   /**
    * List of capacities supported by the Microsoft.PowerBIDedicated resource provider.
    */
   @OpenAPI.extension("x-ms-identifiers", #["name"])
-  @items
+  @pageItems
   @visibility(Lifecycle.Read)
   value?: Operation[];
 

@@ -84,6 +84,7 @@ interface Capacities {
   /**
    * Gets all the Dedicated capacities for the given resource group.
    */
+  @list
   listByResourceGroup is ArmResourceListByParent<
     DedicatedCapacity,
     Response = ArmResponse<DedicatedCapacities>,
@@ -93,6 +94,7 @@ interface Capacities {
   /**
    * Lists all the Dedicated capacities for the given subscription.
    */
+  @list
   list is ArmListBySubscription<
     DedicatedCapacity,
     Response = ArmResponse<DedicatedCapacities>,
