@@ -45,6 +45,9 @@
         "sasPolicy": {
           "expirationAction": "Log",
           "sasExpirationPeriod": "1.15:59:59"
+        },
+        "geoPriorityReplicationStatus": {
+          "isBlobEnabled": true
         }
       }
     },
@@ -138,7 +141,10 @@
           "secondaryLocation": "northcentralus(stage)",
           "statusOfPrimary": "available",
           "statusOfSecondary": "available",
-          "supportsHttpsTrafficOnly": false
+          "supportsHttpsTrafficOnly": false,
+          "geoPriorityReplicationStatus": {
+            "isBlobEnabled": true
+          }
         },
         "sku": {
           "name": "Standard_GRS",

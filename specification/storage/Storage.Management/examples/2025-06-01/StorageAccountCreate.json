@@ -41,6 +41,9 @@
         "sasPolicy": {
           "expirationAction": "Log",
           "sasExpirationPeriod": "1.15:59:59"
+        },
+        "geoPriorityReplicationStatus": {
+          "isBlobEnabled": true
         }
       },
       "sku": {
@@ -132,7 +135,10 @@
           "secondaryLocation": "centraluseuap",
           "statusOfPrimary": "available",
           "statusOfSecondary": "available",
-          "supportsHttpsTrafficOnly": true
+          "supportsHttpsTrafficOnly": true,
+          "geoPriorityReplicationStatus": {
+            "isBlobEnabled": true
+          }
         },
         "sku": {
           "name": "Standard_GRS",
