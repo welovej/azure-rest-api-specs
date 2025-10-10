@@ -10996,6 +10996,10 @@
         "metrics": {
           "$ref": "#/definitions/ObjectReplicationPolicyPropertiesMetrics",
           "description": "Optional. The object replication policy metrics feature options."
+        },
+        "priorityReplication": {
+          "$ref": "#/definitions/ObjectReplicationPolicyPropertiesPriorityReplication",
+          "description": "Optional. The object replication policy priority replication feature options."
         }
       },
       "required": [
@@ -11010,6 +11014,16 @@
         "enabled": {
           "type": "boolean",
           "description": "Indicates whether object replication metrics feature is enabled for the policy."
+        }
+      }
+    },
+    "ObjectReplicationPolicyPropertiesPriorityReplication": {
+      "type": "object",
+      "description": "Optional. The object replication policy priority replication feature options.",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Indicates whether object replication priority replication feature is enabled for the policy."
         }
       }
     },

@@ -10,6 +10,9 @@
         "metrics": {
           "enabled": true
         },
+        "priorityReplication": {
+          "enabled": true
+        },
         "rules": [
           {
             "destinationContainer": "dcont139",
@@ -44,6 +47,9 @@
           "destinationAccount": "dst112",
           "enabledTime": "2019-06-08T03:01:55.7168089Z",
           "metrics": {
+            "enabled": true
+          },
+          "priorityReplication": {
             "enabled": true
           },
           "policyId": "2a20bb73-5717-4635-985a-5d4cf777438f",
