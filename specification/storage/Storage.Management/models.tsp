@@ -2945,6 +2945,11 @@ model StorageAccountPropertiesCreateParameters {
    * Allows you to specify the type of endpoint. Set this to AzureDNSZone to create a large number of accounts in a single subscription, which creates accounts in an Azure DNS Zone and the endpoint URL will have an alphanumeric DNS Zone identifier.
    */
   dnsEndpointType?: DnsEndpointType;
+
+  /**
+   * Geo Priority Replication enablement status for the storage account.
+   */
+  geoPriorityReplicationStatus?: GeoPriorityReplicationStatus;
 }
 
 /**
@@ -3336,6 +3341,16 @@ model ImmutableStorageAccount {
 }
 
 /**
+ * Geo Priority Replication enablement status for the storage account.
+ */
+model GeoPriorityReplicationStatus {
+  /**
+   * Indicates whether Blob Geo Priority Replication is enabled for the storage account.
+   */
+  isBlobEnabled?: boolean;
+}
+
+/**
  * This defines account-level immutability policy properties.
  */
 model AccountImmutabilityPolicyProperties {
@@ -3595,6 +3610,11 @@ model StorageAccountProperties {
    */
   @visibility(Lifecycle.Read)
   accountMigrationInProgress?: boolean;
+
+  /**
+   * Geo Priority Replication enablement status for the storage account.
+   */
+  geoPriorityReplicationStatus?: GeoPriorityReplicationStatus;
 }
 
 /**
@@ -4132,6 +4152,11 @@ model StorageAccountPropertiesUpdateParameters {
    * Allows you to specify the type of endpoint. Set this to AzureDNSZone to create a large number of accounts in a single subscription, which creates accounts in an Azure DNS Zone and the endpoint URL will have an alphanumeric DNS Zone identifier.
    */
   dnsEndpointType?: DnsEndpointType;
+
+  /**
+   * Geo Priority Replication enablement status for the storage account.
+   */
+  geoPriorityReplicationStatus?: GeoPriorityReplicationStatus;
 }
 
 /**
