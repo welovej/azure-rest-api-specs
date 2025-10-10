@@ -1,7 +1,7 @@
 {
   "parameters": {
     "accountName": "sto4445",
-    "api-version": "2025-01-01",
+    "api-version": "2025-06-01",
     "parameters": {
       "properties": {
         "description": "My Storage task assignment",
@@ -64,7 +64,7 @@
     },
     "202": {
       "headers": {
-        "location": "https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/res9101/providers/Microsoft.Storage/locations/eastus/operationResults/00000000-0000-0000-0000-000000000000?api-version=2025-01-01"
+        "location": "https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/res9101/providers/Microsoft.Storage/locations/eastus/operationResults/00000000-0000-0000-0000-000000000000?api-version=2025-06-01"
       }
     }
   },

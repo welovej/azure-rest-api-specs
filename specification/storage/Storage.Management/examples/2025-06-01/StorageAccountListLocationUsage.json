@@ -1,6 +1,6 @@
 {
   "parameters": {
-    "api-version": "2025-01-01",
+    "api-version": "2025-06-01",
     "location": "eastus2(stage)",
     "subscriptionId": "00000000-0000-0000-0000-000000000000"
   },

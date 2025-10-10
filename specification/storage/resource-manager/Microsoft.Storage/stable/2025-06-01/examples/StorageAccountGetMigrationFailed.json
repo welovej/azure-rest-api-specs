@@ -1,7 +1,7 @@
 {
   "parameters": {
     "accountName": "accountname",
-    "api-version": "2025-01-01",
+    "api-version": "2025-06-01",
     "migrationName": "default",
     "monitor": "true",
     "resourceGroupName": "resource-group-name",

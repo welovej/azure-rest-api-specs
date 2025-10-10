@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "StorageManagementClient",
-    "version": "2025-01-01",
+    "version": "2025-06-01",
     "description": "The Azure Storage Management API.",
     "x-typespec-generated": [
       {
