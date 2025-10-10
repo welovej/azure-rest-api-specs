@@ -5084,6 +5084,11 @@ model ObjectReplicationPolicyProperties {
    * Optional. The object replication policy metrics feature options.
    */
   metrics?: ObjectReplicationPolicyPropertiesMetrics;
+
+  /**
+   * Optional. The object replication policy priority replication feature options.
+   */
+  priorityReplication?: ObjectReplicationPolicyPropertiesPriorityReplication;
 }
 
 /**
@@ -5132,6 +5137,16 @@ model ObjectReplicationPolicyFilter {
 model ObjectReplicationPolicyPropertiesMetrics {
   /**
    * Indicates whether object replication metrics feature is enabled for the policy.
+   */
+  enabled?: boolean;
+}
+
+/**
+ * Optional. The object replication policy priority replication feature options.
+ */
+model ObjectReplicationPolicyPropertiesPriorityReplication {
+  /**
+   * Indicates whether object replication priority replication feature is enabled for the policy.
    */
   enabled?: boolean;
 }

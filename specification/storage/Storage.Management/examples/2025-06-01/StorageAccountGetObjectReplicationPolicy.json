@@ -19,6 +19,9 @@
           "metrics": {
             "enabled": true
           },
+          "priorityReplication": {
+            "enabled": true
+          },
           "policyId": "{objectReplicationPolicy-Id}",
           "rules": [
             {
