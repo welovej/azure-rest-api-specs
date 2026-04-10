@@ -33,63 +33,63 @@ using Microsoft.StorageCache;
 #suppress "@azure-tools/typespec-azure-core/no-legacy-usage" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
 @@Legacy.flattenProperty(AscOperation.properties);
 
-@@clientLocation(AmlFilesystems.get, "amlFilesystems");
-@@clientLocation(AmlFilesystems.createOrUpdate, "amlFilesystems");
+@@clientLocation(AmlFilesystems.get, "AmlFilesystems");
+@@clientLocation(AmlFilesystems.createOrUpdate, "AmlFilesystems");
 @@clientName(AmlFilesystems.createOrUpdate::parameters.resource,
   "amlFilesystem"
 );
-@@clientLocation(AmlFilesystems.update, "amlFilesystems");
+@@clientLocation(AmlFilesystems.update, "AmlFilesystems");
 @@clientName(AmlFilesystems.update::parameters.properties, "amlFilesystem");
-@@clientLocation(AmlFilesystems.delete, "amlFilesystems");
-@@clientLocation(AmlFilesystems.listByResourceGroup, "amlFilesystems");
-@@clientLocation(AmlFilesystems.list, "amlFilesystems");
-@@clientLocation(AmlFilesystems.archive, "amlFilesystems");
+@@clientLocation(AmlFilesystems.delete, "AmlFilesystems");
+@@clientLocation(AmlFilesystems.listByResourceGroup, "AmlFilesystems");
+@@clientLocation(AmlFilesystems.list, "AmlFilesystems");
+@@clientLocation(AmlFilesystems.archive, "AmlFilesystems");
 @@clientName(AmlFilesystems.archive::parameters.body, "archiveInfo");
-@@clientLocation(AmlFilesystems.cancelArchive, "amlFilesystems");
+@@clientLocation(AmlFilesystems.cancelArchive, "AmlFilesystems");
 #suppress "@azure-tools/typespec-azure-core/no-legacy-usage" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
 @@Legacy.flattenProperty(AmlFilesystem.properties);
 
-@@clientLocation(AutoExportJobs.get, "autoExportJobs");
-@@clientLocation(AutoExportJobs.createOrUpdate, "autoExportJobs");
+@@clientLocation(AutoExportJobs.get, "AutoExportJobs");
+@@clientLocation(AutoExportJobs.createOrUpdate, "AutoExportJobs");
 @@clientName(AutoExportJobs.createOrUpdate::parameters.resource,
   "autoExportJob"
 );
-@@clientLocation(AutoExportJobs.update, "autoExportJobs");
+@@clientLocation(AutoExportJobs.update, "AutoExportJobs");
 @@clientName(AutoExportJobs.update::parameters.properties, "autoExportJob");
-@@clientLocation(AutoExportJobs.delete, "autoExportJobs");
-@@clientLocation(AutoExportJobs.listByAmlFilesystem, "autoExportJobs");
+@@clientLocation(AutoExportJobs.delete, "AutoExportJobs");
+@@clientLocation(AutoExportJobs.listByAmlFilesystem, "AutoExportJobs");
 #suppress "@azure-tools/typespec-azure-core/no-legacy-usage" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
 @@Legacy.flattenProperty(AutoExportJob.properties);
 
-@@clientLocation(ImportJobs.get, "importJobs");
-@@clientLocation(ImportJobs.createOrUpdate, "importJobs");
+@@clientLocation(ImportJobs.get, "ImportJobs");
+@@clientLocation(ImportJobs.createOrUpdate, "ImportJobs");
 @@clientName(ImportJobs.createOrUpdate::parameters.resource, "importJob");
-@@clientLocation(ImportJobs.update, "importJobs");
+@@clientLocation(ImportJobs.update, "ImportJobs");
 @@clientName(ImportJobs.update::parameters.properties, "importJob");
-@@clientLocation(ImportJobs.delete, "importJobs");
-@@clientLocation(ImportJobs.listByAmlFilesystem, "importJobs");
+@@clientLocation(ImportJobs.delete, "ImportJobs");
+@@clientLocation(ImportJobs.listByAmlFilesystem, "ImportJobs");
 #suppress "@azure-tools/typespec-azure-core/no-legacy-usage" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
 @@Legacy.flattenProperty(ImportJob.properties);
 
-@@clientLocation(AutoImportJobs.get, "autoImportJobs");
-@@clientLocation(AutoImportJobs.createOrUpdate, "autoImportJobs");
+@@clientLocation(AutoImportJobs.get, "AutoImportJobs");
+@@clientLocation(AutoImportJobs.createOrUpdate, "AutoImportJobs");
 @@clientName(AutoImportJobs.createOrUpdate::parameters.resource,
   "autoImportJob"
 );
-@@clientLocation(AutoImportJobs.update, "autoImportJobs");
+@@clientLocation(AutoImportJobs.update, "AutoImportJobs");
 @@clientName(AutoImportJobs.update::parameters.properties, "autoImportJob");
-@@clientLocation(AutoImportJobs.delete, "autoImportJobs");
-@@clientLocation(AutoImportJobs.listByAmlFilesystem, "autoImportJobs");
+@@clientLocation(AutoImportJobs.delete, "AutoImportJobs");
+@@clientLocation(AutoImportJobs.listByAmlFilesystem, "AutoImportJobs");
 #suppress "@azure-tools/typespec-azure-core/no-legacy-usage" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
 @@Legacy.flattenProperty(AutoImportJob.properties);
 
-@@clientLocation(ExpansionJobs.get, "expansionJobs");
-@@clientLocation(ExpansionJobs.createOrUpdate, "expansionJobs");
+@@clientLocation(ExpansionJobs.get, "ExpansionJobs");
+@@clientLocation(ExpansionJobs.createOrUpdate, "ExpansionJobs");
 @@clientName(ExpansionJobs.createOrUpdate::parameters.resource, "expansionJob");
-@@clientLocation(ExpansionJobs.update, "expansionJobs");
+@@clientLocation(ExpansionJobs.update, "ExpansionJobs");
 @@clientName(ExpansionJobs.update::parameters.properties, "expansionJob");
-@@clientLocation(ExpansionJobs.delete, "expansionJobs");
-@@clientLocation(ExpansionJobs.listByAmlFilesystem, "expansionJobs");
+@@clientLocation(ExpansionJobs.delete, "ExpansionJobs");
+@@clientLocation(ExpansionJobs.listByAmlFilesystem, "ExpansionJobs");
 #suppress "@azure-tools/typespec-azure-core/no-legacy-usage" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
 @@Legacy.flattenProperty(ExpansionJob.properties);
 
