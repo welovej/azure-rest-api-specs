@@ -328,6 +328,26 @@ op privateLinkResourcesGetCustomization(
   "python"
 );
 
+// Python SDK breaking change mitigations for TypeSpec migration
+
+// Category 4: Client name - restore swagger title "SecurityCenter"
+@@clientName(SecurityManagementClient, "SecurityCenter", "python");
+
+// Category 3: Enum renames from swagger directives in readme.python.md
+@@clientName(SecuritySolutionsAPI.AadConnectivityState,
+  "AadConnectivityStateEnum",
+  "python"
+);
+@@clientName(SecuritySolutionsAPI.ExternalSecuritySolutionKind,
+  "ExternalSecuritySolutionKindEnum",
+  "python"
+);
+@@clientName(SecuritySolutionsAPI.Protocol, "ProtocolEnum", "python");
+@@clientName(AlertsAPI.Kind, "KindEnum", "python");
+
+// Name collision: Status union collides with Status model from another sub-service
+@@clientName(SecuritySolutionsAPI.Status, "StatusEnum", "python");
+
 @@clientName(Azure.ResourceManager.CommonTypes.ErrorAdditionalInfo,
   "ArmErrorAdditionalInfo",
   "java"
